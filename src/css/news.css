@@ -1,0 +1,93 @@
+/* CATEGORIES */
+
+.categories {
+    display: flex;
+
+    gap: 4rem;
+
+    padding: 2rem 0 1.6rem 4rem;
+
+    margin: 0 auto;
+
+    background-color: #E8F5F9;
+    border-radius: 40px;
+}
+
+.categories__item {
+    padding: 1.8rem 3.2rem;
+    border-radius: 40px;
+}
+
+.categories__item.active {
+    background-color: #1298BD;
+    color: #fff;
+}
+
+.categories__item:not(.active):hover {
+    background-color: rgba(18, 152, 189, 0.5);
+    cursor: pointer;
+    color: #fff;
+}
+
+/* NEWS */
+
+.page__title.section__header-title {
+    margin: 4rem 0 4rem 0;
+    border: none;
+}
+
+.news__body {
+    flex: 1 1 70%;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    flex: 1 1 31%;
+}
+
+.sidebar__item {
+    padding: 4rem;
+
+    background-color: #E8F5F9;
+    border-radius: 40px;
+
+    margin-bottom: 4rem;
+
+    position: relative;
+}
+
+.sidebar__item.telegram {
+    padding-bottom: 38.5rem;
+}
+
+.section__header-title.sidebar__title {
+    margin: 0 0 2rem 0;
+
+    border: none;
+}
+
+.sidebar__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.section__header-title a {
+    color: #BD1212;
+}
+
+.sidebar__image {
+    position: absolute;
+    bottom: 40px;
+    z-index: 1;
+}
+
+.sidebar__image.people {
+    left: 20%;
+}
+
+.sidebar__image.airplane {
+    left: 65%;
+    bottom: 320px;
+}

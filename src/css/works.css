@@ -1,0 +1,30 @@
+body {
+    background-color: #E8F5F9;
+}
+
+.header {
+    box-shadow: 0px 1px 4px rgba(18, 152, 189, 0.26);
+}
+
+.section__header-text {
+    margin-left: 2rem;
+}
+
+.section__header {
+    position: relative;
+}
+
+.section__header img {
+    top: 20%;
+    right: 90px;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+/* WORKS */
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
