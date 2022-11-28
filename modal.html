@@ -24,17 +24,21 @@
                     </h2>
                     <nav class="nav">
                         <div class="nav__item">
-                            <div class="nav__link">
-                                <a href="#">Сайты</a>
+                            <div class="nav__group">
+                                <div class="nav__link">
+                                    <a href="#">Сайты</a>
+                                </div>
+                                <div class="nav__link">
+                                    <a href="#">Наполнение</a>
+                                </div>
                             </div>
-                            <div class="nav__link">
-                                <a href="#">Наполнение</a>
-                            </div>
-                            <div class="nav__link">
-                                <a href="#">Сообщество</a>
-                            </div>
-                            <div class="nav__link">
-                                <a href="#">Контакты</a>
+                            <div class="nav__group">
+                                <div class="nav__link">
+                                    <a href="#">Сообщество</a>
+                                </div>
+                                <div class="nav__link">
+                                    <a href="#">Контакты</a>
+                                </div>
                             </div>
                         </div>
                         <div class="nav__item nav__item-contacts">
@@ -45,7 +49,7 @@
                             </div>
                             <div class="nav__link">
                                 <a class="nav__link-item" href="#">
-                                    <img src="src/img/mail.png" alt="Почта" />
+                                    <img src="src/img/mail.png" alt="Телеграм" />
                                 </a>
                             </div>
                             <div class="nav__link">
@@ -53,14 +57,60 @@
                             </div>
                         </div>
 
-                        <button class="button">Связаться с нами</button>
+                        <button class="button header__button">Связаться с нами</button>
                     </nav>
+
+                    <button class="nav-toggle" type="button">
+                        <span class="nav-toggle__item">Menu</span>
+                    </button>
+                    <!-- /.nav__toggle -->
+
+                    <div class="burger">
+                        <h2 class="burger-header__title">
+                            <a href="#">Меню</a>
+                        </h2>
+                        <nav class="burger-nav">
+                            <div class="burger-nav__item">
+                                <div class="burger-nav__link">
+                                    <a href="#">Сайты</a>
+                                </div>
+                                <div class="burger-nav__link">
+                                    <a href="#">Наполнение</a>
+                                </div>
+                                <div class="burger-nav__link">
+                                    <a href="#">Сообщество</a>
+                                </div>
+                                <div class="burger-nav__link">
+                                    <a href="#">Контакты</a>
+                                </div>
+                            </div>
+                            <div class="burger-nav__item burger-nav__item-info">
+                                <div class="burger-nav__link">
+                                    <div class="burger-nav__link-item">
+                                        <div class="burger-nav__link-icon">
+                                            <img src="src/img/phone.png" alt="Телефон" />
+                                        </div>
+                                        <div class="burger-nav__link-icon">
+                                            <img src="src/img/mail.png" alt="Телеграм" />
+                                        </div>
+                                        <div>
+                                            <a href="tel:+79001234567">+7 900 123-45-67</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                        <h2 class="burger-header__logo">
+                            <a href="#">
+                                <img src="src/img/header/logo.png" alt="Лого">
+                            </a>
+                        </h2>
+                    </div>
                 </div>
             </div>
             <!-- /.container -->
         </header>
         <!-- /.header -->
-
         <main class="main">
             <section class="section section--modal">
                 <div class="container">
@@ -215,6 +265,7 @@
                                             административных условий. Прежде всего, граница обучения кадров обеспечивает
                                             широкому кругу (специалистов) участие в формировании распределения
                                             внутренних резервов и ресурсов.</p>
+                                        <div class="reviews__overflow"><a href="#">Читать полностью</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -248,9 +299,7 @@
 
                                 <button class="button">Подписаться</button>
 
-                                <img class="sidebar__image people" src="src/img/sidebar/people.png" alt="Человек">
-                                <img class="sidebar__image airplane" src="src/img/sidebar/airplane.png"
-                                    alt="Бумажный самолет">
+                                <img class="sidebar__image" src="src/img/sidebar/man_airplane.svg" alt="Человек">
                             </div>
                         </div>
                     </div>
@@ -318,6 +367,7 @@
                     </div>
                 </div>
                 <!-- /.footer__body -->
+
             </div>
             <!-- /.container -->
         </footer>
@@ -326,6 +376,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 

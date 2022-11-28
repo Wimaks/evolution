@@ -39,15 +39,15 @@
 }
 
 .block__item-body.second {
-    max-width: 330px;
+    width: 330px;
 }
 
 .block__item-body.third {
-    max-width: 390px;
+    width: 390px;
 }
 
 .block__item-body.fourth {
-    max-width: 330px;
+    width: 330px;
 }
 
 .block__item-text {
@@ -98,7 +98,7 @@
 /* Faq */
 
 .faq {
-    margin-top: 4rem;
+    margin: 4rem 0;
 }
 
 .faq__body {
@@ -107,7 +107,6 @@
 }
 
 .faq__content {
-    margin-right: 80px;
     width: 50%;
 }
 
@@ -181,6 +180,63 @@
     max-width: 80%;
 }
 
-.faq.sidebar__item {
-    width: 31%;
+.faq .sidebar__item {
+    width: 40%;
 }
+
+@media (max-width: 1440px) {}
+
+@media (max-width: 1230px) {}
+
+@media (max-width: 993px) {
+    .block__item {
+        flex-direction: column;
+        max-width: 460px;
+        padding: 4rem;
+    }
+
+    .block__item-body.first,
+    .block__item-body.second,
+    .block__item-body.third,
+    .block__item-body.fourth {
+        width: auto;
+    }
+
+    .block__item-body.second {
+        gap: 4rem;
+    }
+
+    .block__image {
+        align-self: center;
+    }
+
+    .block__item .card__price {
+        flex-direction: column;
+    }
+
+    .faq__body {
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 770px) {
+
+    .blocks {
+        flex-direction: column;
+    }
+
+    .blocks .block__item {
+        max-width: 100%;
+    }
+
+    .faq__content,
+    .faq .sidebar__item {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 575px) {}
+
+@media (max-width: 300px) {}

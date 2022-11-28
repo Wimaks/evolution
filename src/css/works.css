@@ -21,10 +21,60 @@ body {
     transform: translateY(-50%);
 }
 
+.section__header-body {
+    display: flex;
+}
+
 /* WORKS */
 
 .works {
     display: flex;
     flex-wrap: wrap;
     gap: 4rem;
+    justify-content: space-between;
 }
+
+.works__row {
+    display: flex;
+}
+
+.works__item {
+    width: 22%;
+}
+
+@media (max-width: 1440px) {}
+
+@media (max-width: 1230px) {
+
+    /* WORKS */
+
+    .works {
+        gap: 2rem;
+    }
+
+}
+
+@media (max-width: 993px) {
+
+    .works__item {
+        width: 31%;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    .works__item {
+        width: 48%;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .works__item {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 300px) {}
