@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="src/css/style.css">
     <title>Студия "Elevation"</title>
 </head>
@@ -21,17 +22,21 @@
                     </h2>
                     <nav class="nav">
                         <div class="nav__item">
-                            <div class="nav__link">
-                                <a href="#">Сайты</a>
+                            <div class="nav__group">
+                                <div class="nav__link">
+                                    <a href="#">Сайты</a>
+                                </div>
+                                <div class="nav__link">
+                                    <a href="#">Наполнение</a>
+                                </div>
                             </div>
-                            <div class="nav__link">
-                                <a href="#">Наполнение</a>
-                            </div>
-                            <div class="nav__link">
-                                <a href="#">Сообщество</a>
-                            </div>
-                            <div class="nav__link">
-                                <a href="#">Контакты</a>
+                            <div class="nav__group">
+                                <div class="nav__link">
+                                    <a href="#">Сообщество</a>
+                                </div>
+                                <div class="nav__link">
+                                    <a href="#">Контакты</a>
+                                </div>
                             </div>
                         </div>
                         <div class="nav__item nav__item-contacts">
@@ -42,7 +47,7 @@
                             </div>
                             <div class="nav__link">
                                 <a class="nav__link-item" href="#">
-                                    <img src="src/img/mail.png" alt="Почта" />
+                                    <img src="src/img/mail.png" alt="Телеграм" />
                                 </a>
                             </div>
                             <div class="nav__link">
@@ -50,8 +55,55 @@
                             </div>
                         </div>
 
-                        <button class="button">Связаться с нами</button>
+                        <button class="button header__button">Связаться с нами</button>
                     </nav>
+
+                    <button class="nav-toggle" type="button">
+                        <span class="nav-toggle__item">Menu</span>
+                    </button>
+                    <!-- /.nav__toggle -->
+
+                    <div class="burger">
+                        <h2 class="burger-header__title">
+                            <a href="#">Меню</a>
+                        </h2>
+                        <nav class="burger-nav">
+                            <div class="burger-nav__item">
+                                <div class="burger-nav__link">
+                                    <a href="#">Сайты</a>
+                                </div>
+                                <div class="burger-nav__link">
+                                    <a href="#">Наполнение</a>
+                                </div>
+                                <div class="burger-nav__link">
+                                    <a href="#">Сообщество</a>
+                                </div>
+                                <div class="burger-nav__link">
+                                    <a href="#">Контакты</a>
+                                </div>
+                            </div>
+                            <div class="burger-nav__item burger-nav__item-info">
+                                <div class="burger-nav__link">
+                                    <div class="burger-nav__link-item">
+                                        <div class="burger-nav__link-icon">
+                                            <img src="src/img/phone.png" alt="Телефон" />
+                                        </div>
+                                        <div class="burger-nav__link-icon">
+                                            <img src="src/img/mail.png" alt="Телеграм" />
+                                        </div>
+                                        <div>
+                                            <a href="tel:+79001234567">+7 900 123-45-67</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                        <h2 class="burger-header__logo">
+                            <a href="#">
+                                <img src="src/img/header/logo.png" alt="Лого">
+                            </a>
+                        </h2>
+                    </div>
                 </div>
             </div>
             <!-- /.container -->
@@ -149,6 +201,46 @@
                                     <button class="button button--white">О наших решениях</button>
                                 </div>
                             </div>
+                            <div class="works__item">
+                                <div class="works__item-img">
+                                    <img src="src/img/works/grand.jpg" alt="ГрандПлюс.ком">
+                                </div>
+                                <div class="works__item-content">
+                                    <h3 class="works__item-title item__title">ГрандПлюс.ком</h3>
+                                    <p class="works__item-text">Все об организации систем отопления</p>
+                                    <button class="button button--white">О наших решениях</button>
+                                </div>
+                            </div>
+                            <div class="works__item">
+                                <div class="works__item-img">
+                                    <img src="src/img/works/grand.jpg" alt="ГрандПлюс.ком">
+                                </div>
+                                <div class="works__item-content">
+                                    <h3 class="works__item-title item__title">ГрандПлюс.ком</h3>
+                                    <p class="works__item-text">Все об организации систем отопления</p>
+                                    <button class="button button--white">О наших решениях</button>
+                                </div>
+                            </div>
+                            <div class="works__item">
+                                <div class="works__item-img">
+                                    <img src="src/img/works/grand.jpg" alt="ГрандПлюс.ком">
+                                </div>
+                                <div class="works__item-content">
+                                    <h3 class="works__item-title item__title">ГрандПлюс.ком</h3>
+                                    <p class="works__item-text">Все об организации систем отопления</p>
+                                    <button class="button button--white">О наших решениях</button>
+                                </div>
+                            </div>
+                            <div class="works__item">
+                                <div class="works__item-img">
+                                    <img src="src/img/works/grand.jpg" alt="ГрандПлюс.ком">
+                                </div>
+                                <div class="works__item-content">
+                                    <h3 class="works__item-title item__title">ГрандПлюс.ком</h3>
+                                    <p class="works__item-text">Все об организации систем отопления</p>
+                                    <button class="button button--white">О наших решениях</button>
+                                </div>
+                            </div>
                         </div>
                         <!-- /.works__slider -->
                     </div>
@@ -172,18 +264,28 @@
                             <div class="card__item-date">
                                 6 июня
                             </div>
-                            <h3 class="card__title item__title">Сайты</h3>
-                            <p class="card__text">Информационные проекты, статейники, лендинги и корпоративные сайты</p>
-                            <ul class="card__list">
-                                <li class="card__list-item">Разработка дизайна главной страницы</li>
-                                <li class="card__list-item">Разработка дизайна внутренних страниц</li>
-                                <li class="card__list-item">Адаптивная вёрстка и натяжка на WordPress</li>
-                                <li class="card__list-item">Настройка функционала и тестирование</li>
-                            </ul>
+                            <div class="card__content">
+                                <h3 class="card__title item__title">Сайты</h3>
+                                <p class="card__text">Информационные проекты, статейники, лендинги и корпоративные сайты
+                                </p>
+                                <ul class="card__list">
+                                    <li class="card__list-item">Разработка дизайна главной страницы</li>
+                                    <li class="card__list-item">Разработка дизайна внутренних страниц</li>
+                                    <li class="card__list-item">Адаптивная вёрстка и натяжка на WordPress</li>
+                                    <li class="card__list-item">Настройка функционала и тестирование</li>
+                                </ul>
+                            </div>
                             <div class="card__footer">
-                                <div class="card__price">от 60 000 ₽<br> под ключ</div>
-                                <button class="button button--white">Заказать</button>
-                                <img src="src/img/card/1.jpg" alt="Пример работы">
+                                <div class="card__footer-content">
+                                    <div class="card__price">
+                                        <p>от 60 000 ₽</p>
+                                        <p>под ключ</p>
+                                    </div>
+                                    <button class="button button--white">Заказать</button>
+                                </div>
+                                <div class="card__img">
+                                    <img src="src/img/card/1.svg" alt="Пример работы">
+                                </div>
                             </div>
 
                         </div>
@@ -191,39 +293,58 @@
                             <div class="card__item-date">
                                 6 июня
                             </div>
-                            <h3 class="card__title item__title">Наполнение</h3>
-                            <p class="card__text">Подберем ключи, напишем статьи, разместим и красиво оформим на Вашем
-                                сайте</p>
-                            <ul class="card__list">
-                                <li class="card__list-item">Внедрим наши программные решения для оформления</li>
-                                <li class="card__list-item">Сделаем аудит и укажем на основные ключевые точки роста
-                                    проекта
-                                </li>
-                                <li class="card__list-item">Минимальный заказ всего 10 статей</li>
-                            </ul>
+                            <div class="card__content">
+                                <h3 class="card__title item__title">Наполнение</h3>
+                                <p class="card__text">Подберем ключи, напишем статьи, разместим и красиво оформим на
+                                    Вашем
+                                    сайте</p>
+                                <ul class="card__list">
+                                    <li class="card__list-item">Внедрим наши программные решения для оформления</li>
+                                    <li class="card__list-item">Сделаем аудит и укажем на основные ключевые точки роста
+                                        проекта
+                                    </li>
+                                    <li class="card__list-item">Минимальный заказ всего 10 статей</li>
+                                </ul>
+                            </div>
                             <div class="card__footer">
-                                <div class="card__price">Всего 1 500₽<br> за статью</div>
-                                <button class="button button--white">Заказать</button>
-                                <img src="src/img/card/2.jpg" alt="Пример работы">
+                                <div class="card__footer-content">
+                                    <div class="card__price">
+                                        <p>Всего 1 500₽</p>
+                                        <p>за статью</p>
+                                    </div>
+                                    <button class="button button--white">Заказать</button>
+                                </div>
+                                <div class="card__img">
+                                    <img src="src/img/card/2.jpg" alt="Пример работы">
+                                </div>
                             </div>
                         </div>
                         <div class="card__item third">
                             <div class="card__item-date">
                                 6 июня
                             </div>
-                            <h3 class="card__title item__title">Инструменты</h3>
-                            <ul class="card__list">
-                                <li class="card__list-item">Набор плагинов для оформления контента на информационных
-                                    сайтах</li>
-                                <li class="card__list-item">Макет и сборка для запуска сайта</li>
-                                <li class="card__list-item">Сообщество веб-мастеров</li>
-                                <li class="card__list-item">Марафоны по запуску сайтов статейников</li>
-                                <li class="card__list-item">Блог о веб-разработке</li>
-                            </ul>
+                            <div class="card__content">
+                                <h3 class="card__title item__title">Инструменты</h3>
+                                <ul class="card__list">
+                                    <li class="card__list-item">Набор плагинов для оформления контента на информационных
+                                        сайтах</li>
+                                    <li class="card__list-item">Макет и сборка для запуска сайта</li>
+                                    <li class="card__list-item">Сообщество веб-мастеров</li>
+                                    <li class="card__list-item">Марафоны по запуску сайтов статейников</li>
+                                    <li class="card__list-item">Блог о веб-разработке</li>
+                                </ul>
+                            </div>
                             <div class="card__footer">
-                                <div class="card__price">Всего<br> 19 990 ₽</div>
-                                <button class="button button--white">Заказать</button>
-                                <img src="src/img/card/3.jpg" alt="Пример работы">
+                                <div class="card__footer-content">
+                                    <div class="card__price">
+                                        <p>Всего</p>
+                                        <p>19 990₽</p>
+                                    </div>
+                                    <button class="button button--white">Заказать</button>
+                                </div>
+                                <div class="card__img">
+                                    <img src="src/img/card/3.jpg" alt="Пример работы">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -344,7 +465,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="news__form" style="max-width: 453px;">
+                        <div class="news__form">
                             <h2 class="news__form-title">Подпишись на нас
                                 и будь в курсе новостей</h2>
                             <form class="form" action="/" method="post">
@@ -393,7 +514,9 @@
                                 <p class="reviews__text">Современная и популярная компания, помогли сделать сайт по
                                     требованиям заказчика, быстро настроили контекстную рекламу, все это в пределах
                                     указанного бюджета. Постоянно были на связи и решали все наши вопросы. Довольны,
-                                    спасибо.</p>
+                                    спасибо. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, veniam?
+                                </p>
+                                <div class="reviews__overflow"><a href="#">Читать полностью</a></div>
                             </div>
                             <!-- /.reviews__item -->
                             <div class="reviews__item">
@@ -408,7 +531,8 @@
                                 <p class="reviews__text">Хочу поделиться своим опытом работы с компание топлавина, мне
                                     эта фирма разрабатывала сайт по уникальному дизайну. Перед тем как обратиться в эту
                                     компанию даже не подумал почитать отзывы, но все обошлось. Компания надежная,
-                                    регулярно предоставля...</p>
+                                    регулярно предоставля...
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, veniam?</p>
                                 <div class="reviews__overflow"><a href="#">Читать полностью</a></div>
                             </div>
                             <!-- /.reviews__item -->
@@ -424,6 +548,102 @@
                                     впервые, работали на 100% по удаленке, toplavina подготовила мне три дизайна на
                                     выбор для сайта одностраничника, весь текст подготовили самостоятельно, все работает
                                     без каких-либо проблем. Быстро и надежно.</p>
+                                <div class="reviews__overflow"><a href="#">Читать полностью</a></div>
+                            </div>
+                            <!-- /.reviews__item -->
+                            <div class="reviews__item">
+                                <h4 class="reviews__item-title item__title">Таисия Еремина</h4>
+                                <div class="reviews__rating">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                </div>
+                                <p class="reviews__text">Тoплaвинa oтличнo cпpaвилacь c нacтpoйкoй peклaмнoй кaмпaнии.
+                                    Дo этoгo paбoтaлa c дpугoй opгaнизaциeй и никaк нe мoглa cдвинутьcя c мecтa.nbsp;
+                                    Мapкeтoлoги кoмпaнии пpoфeccиoнaльнo взялиcь зa cвoю paбoту. Пpeдвapитeльнo cдeлaли
+                                    ...</p>
+                                <div class="reviews__overflow"><a href="#">Читать полностью</a></div>
+                            </div>
+                            <!-- /.reviews__item -->
+                            <div class="reviews__item">
+                                <h4 class="reviews__item-title item__title">Таисия Еремина</h4>
+                                <div class="reviews__rating">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                </div>
+                                <p class="reviews__text">Тoплaвинa oтличнo cпpaвилacь c нacтpoйкoй peклaмнoй кaмпaнии.
+                                    Дo этoгo paбoтaлa c дpугoй opгaнизaциeй и никaк нe мoглa cдвинутьcя c мecтa.nbsp;
+                                    Мapкeтoлoги кoмпaнии пpoфeccиoнaльнo взялиcь зa cвoю paбoту. Пpeдвapитeльнo cдeлaли
+                                    ...</p>
+                                <div class="reviews__overflow"><a href="#">Читать полностью</a></div>
+                            </div>
+                            <!-- /.reviews__item -->
+                            <div class="reviews__item">
+                                <h4 class="reviews__item-title item__title">Таисия Еремина</h4>
+                                <div class="reviews__rating">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                </div>
+                                <p class="reviews__text">Тoплaвинa oтличнo cпpaвилacь c нacтpoйкoй peклaмнoй кaмпaнии.
+                                    Дo этoгo paбoтaлa c дpугoй opгaнизaциeй и никaк нe мoглa cдвинутьcя c мecтa.nbsp;
+                                    Мapкeтoлoги кoмпaнии пpoфeccиoнaльнo взялиcь зa cвoю paбoту. Пpeдвapитeльнo cдeлaли
+                                    ...</p>
+                                <div class="reviews__overflow"><a href="#">Читать полностью</a></div>
+                            </div>
+                            <!-- /.reviews__item -->
+                            <div class="reviews__item">
+                                <h4 class="reviews__item-title item__title">Таисия Еремина</h4>
+                                <div class="reviews__rating">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                </div>
+                                <p class="reviews__text">Тoплaвинa oтличнo cпpaвилacь c нacтpoйкoй peклaмнoй кaмпaнии.
+                                    Дo этoгo paбoтaлa c дpугoй opгaнизaциeй и никaк нe мoглa cдвинутьcя c мecтa.nbsp;
+                                    Мapкeтoлoги кoмпaнии пpoфeccиoнaльнo взялиcь зa cвoю paбoту. Пpeдвapитeльнo cдeлaли
+                                    ...</p>
+                                <div class="reviews__overflow"><a href="#">Читать полностью</a></div>
+                            </div>
+                            <!-- /.reviews__item -->
+                            <div class="reviews__item">
+                                <h4 class="reviews__item-title item__title">Таисия Еремина</h4>
+                                <div class="reviews__rating">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                </div>
+                                <p class="reviews__text">Тoплaвинa oтличнo cпpaвилacь c нacтpoйкoй peклaмнoй кaмпaнии.
+                                    Дo этoгo paбoтaлa c дpугoй opгaнизaциeй и никaк нe мoглa cдвинутьcя c мecтa.nbsp;
+                                    Мapкeтoлoги кoмпaнии пpoфeccиoнaльнo взялиcь зa cвoю paбoту. Пpeдвapитeльнo cдeлaли
+                                    ...</p>
+                                <div class="reviews__overflow"><a href="#">Читать полностью</a></div>
+                            </div>
+                            <!-- /.reviews__item -->
+                            <div class="reviews__item">
+                                <h4 class="reviews__item-title item__title">Таисия Еремина</h4>
+                                <div class="reviews__rating">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                    <img src="src/img/reviews/star.svg" alt="Звезда">
+                                </div>
+                                <p class="reviews__text">Тoплaвинa oтличнo cпpaвилacь c нacтpoйкoй peклaмнoй кaмпaнии.
+                                    Дo этoгo paбoтaлa c дpугoй opгaнизaциeй и никaк нe мoглa cдвинутьcя c мecтa.nbsp;
+                                    Мapкeтoлoги кoмпaнии пpoфeccиoнaльнo взялиcь зa cвoю paбoту. Пpeдвapитeльнo cдeлaли
+                                    ...</p>
                                 <div class="reviews__overflow"><a href="#">Читать полностью</a></div>
                             </div>
                             <!-- /.reviews__item -->
@@ -513,11 +733,17 @@
                     </div>
                 </div>
                 <!-- /.footer__body -->
+
             </div>
             <!-- /.container -->
         </footer>
         <!-- /.footer -->
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
