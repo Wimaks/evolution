@@ -23,6 +23,7 @@ $(document).ready(function () {
         slidesToShow: 4,
         infinite: false,
         waitForAnimate: false,
+        touchThreshold: 10,
         responsive: [
             {
                 breakpoint: 1200,
