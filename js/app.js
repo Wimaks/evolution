@@ -123,7 +123,7 @@ $(document).ready(function () {
         $('#form').removeClass('_sending')
     })
 
-    $('.popup__close-second, .popup__close, .button-submit').on('click', function (event) {
+    $('.popup__close-second, .popup__close').on('click', function (event) {
         // event.preventDefault();
 
         $('.popup__second').removeClass('active')
