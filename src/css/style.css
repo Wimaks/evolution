@@ -55,10 +55,6 @@ a {
     color: inherit;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 h1,
 h2,
 h3,
@@ -172,8 +168,15 @@ li {
 
 .nav__link {
     padding: 1rem;
-
+    display: flex;
     transition: all 0.3s linear;
+}
+
+.nav__link a:hover,
+.nav__link-item:hover,
+.footer__item-link a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
 }
 
 .nav__item-contacts .nav__link {
@@ -1059,17 +1062,17 @@ li {
     margin: 8rem auto 0 auto;
 }
 
-.number__pages span {
+.number__page {
     padding: .5rem 1.2rem;
     border-radius: 40px;
     cursor: pointer;
 }
 
-.number__pages span:hover {
+.number__page:hover {
     background-color: rgba(189, 18, 18, .5);
 }
 
-.number__pages span.active {
+.number__page.active {
     background-color: #BD1212;
     color: #fff;
 }
