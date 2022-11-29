@@ -113,12 +113,7 @@ $(document).ready(function () {
 
         $('.popup').removeClass('active')
         $('#form').removeClass('_sending')
+        $('#form').trigger("reset");
         $('.popup__form-input').removeClass('_error')
-    })
-
-    $('.button-submit-news').on('click', function (event) {
-        // event.preventDefault()
-
-        $('#form__news').trigger("reset");
     })
 })
