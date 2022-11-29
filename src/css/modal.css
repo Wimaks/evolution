@@ -36,9 +36,9 @@
     gap: 4rem;
 }
 
-.article__content {}
+/* .article__content {}
 
-.article__content-item {}
+.article__content-item {} */
 
 .article__title {
     margin: 4rem 0 2rem 0;
@@ -127,13 +127,13 @@
     gap: 2rem;
 }
 
-.author__photo {}
+/* .author__photo {} */
 
 .author__photo img {
     display: block;
 }
 
-.author__body {}
+/* .author__body {} */
 
 .author__title {
     color: rgba(0, 0, 0, .5);
@@ -235,7 +235,7 @@
     margin: 0 0 1rem 0;
 }
 
-.comment__header-left {}
+/* .comment__header-left {} */
 
 .comment__name {
     font-weight: 600;
