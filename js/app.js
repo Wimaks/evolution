@@ -127,8 +127,6 @@ $(document).ready(function () {
         // event.preventDefault();
 
         $('.popup__second').removeClass('active')
-
-        $('#form').trigger("reset");
     })
 
     $('.button-submit-news').on('click', function (event) {
