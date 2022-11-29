@@ -117,6 +117,16 @@ li {
 .section__header-subtitle {
     font-weight: 600;
     font-size: 2rem;
+
+    transition: all .2s linear;
+}
+
+.section__header-subtitle:hover span {
+    text-decoration: underline;
+}
+
+.section__header-subtitle:hover img {
+    transform: scale(1.2);
 }
 
 .section__header-subtitle span {
@@ -544,10 +554,14 @@ li {
     border: none;
 
     filter: brightness(0) saturate(100%) invert(46%) sepia(75%) saturate(523%) hue-rotate(146deg) brightness(93%) contrast(94%);
+    -webkit-filter: brightness(0) saturate(100%) invert(46%) sepia(75%) saturate(523%) hue-rotate(146deg) brightness(93%) contrast(94%);
+    -moz-filter: brightness(0) saturate(100%) invert(46%) sepia(75%) saturate(523%) hue-rotate(146deg) brightness(93%) contrast(94%);
 }
 
 .slick-arrow:hover {
     filter: brightness(0) saturate(100%) invert(46%) sepia(75%) saturate(523%) hue-rotate(146deg) brightness(93%) contrast(94%) opacity(50%);
+    -webkit-filter: brightness(0) saturate(100%) invert(46%) sepia(75%) saturate(523%) hue-rotate(146deg) brightness(93%) contrast(94%) opacity(50%);
+    -moz-filter: brightness(0) saturate(100%) invert(46%) sepia(75%) saturate(523%) hue-rotate(146deg) brightness(93%) contrast(94%) opacity(50%);
 }
 
 /* Стрелка влево */
@@ -654,7 +668,7 @@ li {
 
 .card__list-item:before {
     content: "";
-    background-image: url('/src/img/card/list-star.svg');
+    background: url("../img/reviews/star.svg") center no-repeat;
     width: 21px;
     height: 21px;
     position: absolute;
@@ -1048,6 +1062,12 @@ li {
     z-index: 1;
 
     transform: translateY(-50%);
+}
+
+.footer__arrow:hover {
+    filter: invert(44%) sepia(70%) saturate(520%) hue-rotate(146deg) brightness(150%) contrast(260%);
+    -webkit-filter: invert(44%) sepia(70%) saturate(520%) hue-rotate(146deg) brightness(150%) contrast(260%);
+    -moz-filter: invert(44%) sepia(70%) saturate(520%) hue-rotate(146deg) brightness(150%) contrast(260%);
 }
 
 /* NUMBER PAGES */
