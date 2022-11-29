@@ -46,6 +46,8 @@
     font-size: 2.4rem;
 
     transition: transform 0.2s linear;
+
+    z-index: 10;
 }
 
 .popup__close:hover {
@@ -73,7 +75,7 @@
     position: relative;
 }
 
-.popup__form-body::after {
+.popup__content::after {
     content: "";
     position: absolute;
     top: 0;
@@ -84,9 +86,10 @@
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s ease 0s;
+    z-index: 9;
 }
 
-.popup__form-body._sending::after {
+.popup__content._sending::after {
     opacity: 1;
     visibility: visible;
 }
