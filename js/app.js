@@ -45,7 +45,8 @@ $(document).ready(function () {
         ]
     })
 
-    //* Smooth Scroll
+    //* SMOOTH SCROLL
+
     $('[data-scroll]').on('click', function (event) {
         event.preventDefault();
 
@@ -61,4 +62,24 @@ $(document).ready(function () {
             scrollTop: blockOffset
         }, 500);
     })
+
+    //* SERVICES
+
+    $('.reviews__overflow').on('click', function (event) {
+        event.preventDefault()
+
+        $(this).closest('.reviews__item, .comments__item').toggleClass('opened')
+    })
+
+    //* SWITCH
+
+    $('.switch-btn').click(function () {
+        $(this).toggleClass('switch-on');
+        $('.comments__selection-text').toggleClass('active');
+        if ($(this).hasClass('switch-on')) {
+            $(this).trigger('on.switch');
+        } else {
+            $(this).trigger('off.switch');
+        }
+    });
 })

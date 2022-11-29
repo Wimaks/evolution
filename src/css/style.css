@@ -930,11 +930,26 @@ li {
     display: flex;
 }
 
-.reviews__text {
+.reviews__item.opened .reviews__text,
+.comments__item.opened .comment__text {
+    display: unset;
+}
+
+.reviews__item.opened .reviews__overflow:after,
+.comments__item.opened .reviews__overflow:after {
+    transform: rotate(315deg);
+
+    top: 35%;
+}
+
+.reviews__item:not(.opened) .reviews__text,
+.comments__item:not(.opened) .comment__text {
     display: -webkit-box;
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     overflow: hidden;
+
+    transition: all 0.3s linear;
 }
 
 .reviews__overflow {
@@ -942,12 +957,13 @@ li {
     margin: 2rem 0 0 0;
 
     position: relative;
-    display: inline-block;
+    display: block;
     padding-right: 2rem;
 }
 
 .reviews__overflow:hover {
     text-decoration: underline;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .reviews__overflow:after {
@@ -955,13 +971,15 @@ li {
     display: block;
     width: 10px;
     height: 10px;
-    border-top: 2px solid #ccc;
-    border-right: 2px solid #ccc;
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    border-right: 2px solid rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 15%;
-    right: 0;
+    left: 150px;
     z-index: 1;
     transform: rotate(135deg);
+
+    transition: all 0.3s linear;
 }
 
 /* FOOTER */
