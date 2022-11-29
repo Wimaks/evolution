@@ -12,7 +12,7 @@
 
 <body>
     <div class="page">
-        <header class="header">
+        <header class="header" id="header">
             <div class="container">
                 <div class="header__inner">
                     <h2 class="header__logo">
@@ -24,7 +24,7 @@
                         <div class="nav__item">
                             <div class="nav__group">
                                 <div class="nav__link">
-                                    <a href="#">Сайты</a>
+                                    <a href="cites.html">Сайты</a>
                                 </div>
                                 <div class="nav__link">
                                     <a href="#">Наполнение</a>
@@ -153,7 +153,9 @@
                         <h3 class="section__header-title">Наши работы</h3>
                         <!-- /.section__header-title -->
                         <h4 class="section__header-subtitle">
-                            <a href="works.html">Все работы</a>
+                            <a href="works.html"><span>Все работы</span>
+                                <img src="src/img/arrow.svg" alt="Стрелка">
+                            </a>
                         </h4>
                         <!-- /.section__header-subtitle -->
                     </div>
@@ -255,97 +257,113 @@
                     <div class="section__header">
                         <h3 class="section__header-title">Компетенции</h3>
                         <!-- /.section__header-title -->
-                        <h4 class="section__header-subtitle">Все компетенции</h4>
+                        <h4 class="section__header-subtitle">
+                            <a href="#"><span>Все компетенции</span>
+                                <img src="src/img/arrow.svg" alt="Стрелка">
+                            </a>
+                        </h4>
                         <!-- /.section__header-subtitle -->
                     </div>
                     <!-- /.section__header -->
                     <div class="card">
-                        <div class="card__item first">
-                            <div class="card__item-date">
-                                6 июня
-                            </div>
-                            <div class="card__content">
-                                <h3 class="card__title item__title">Сайты</h3>
-                                <p class="card__text">Информационные проекты, статейники, лендинги и корпоративные сайты
-                                </p>
-                                <ul class="card__list">
-                                    <li class="card__list-item">Разработка дизайна главной страницы</li>
-                                    <li class="card__list-item">Разработка дизайна внутренних страниц</li>
-                                    <li class="card__list-item">Адаптивная вёрстка и натяжка на WordPress</li>
-                                    <li class="card__list-item">Настройка функционала и тестирование</li>
-                                </ul>
-                            </div>
-                            <div class="card__footer">
-                                <div class="card__footer-content">
-                                    <div class="card__price">
-                                        <p>от 60 000 ₽</p>
-                                        <p>под ключ</p>
-                                    </div>
-                                    <button class="button button--white">Заказать</button>
-                                </div>
-                                <div class="card__img">
-                                    <img src="src/img/card/1.svg" alt="Пример работы">
-                                </div>
-                            </div>
 
+                        <div class="card__item first">
+                            <a href="cites.html">
+                                <div class="card__item-date">
+                                    6 июня
+                                </div>
+                                <div class="card__content">
+                                    <h3 class="card__title item__title">Сайты</h3>
+                                    <p class="card__text">Информационные проекты, статейники, лендинги и корпоративные
+                                        сайты
+                                    </p>
+                                    <ul class="card__list">
+                                        <li class="card__list-item">Разработка дизайна главной страницы</li>
+                                        <li class="card__list-item">Разработка дизайна внутренних страниц</li>
+                                        <li class="card__list-item">Адаптивная вёрстка и натяжка на WordPress</li>
+                                        <li class="card__list-item">Настройка функционала и тестирование</li>
+                                    </ul>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__footer-content">
+                                        <div class="card__price">
+                                            <p>от 60 000 ₽</p>
+                                            <p>под ключ</p>
+                                        </div>
+                                        <button class="button button--white">Заказать</button>
+                                    </div>
+                                    <div class="card__img">
+                                        <img src="src/img/card/1.svg" alt="Пример работы">
+                                    </div>
+                                </div>
+                            </a>
                         </div>
+
+
                         <div class="card__item second">
-                            <div class="card__item-date">
-                                6 июня
-                            </div>
-                            <div class="card__content">
-                                <h3 class="card__title item__title">Наполнение</h3>
-                                <p class="card__text">Подберем ключи, напишем статьи, разместим и красиво оформим на
-                                    Вашем
-                                    сайте</p>
-                                <ul class="card__list">
-                                    <li class="card__list-item">Внедрим наши программные решения для оформления</li>
-                                    <li class="card__list-item">Сделаем аудит и укажем на основные ключевые точки роста
-                                        проекта
-                                    </li>
-                                    <li class="card__list-item">Минимальный заказ всего 10 статей</li>
-                                </ul>
-                            </div>
-                            <div class="card__footer">
-                                <div class="card__footer-content">
-                                    <div class="card__price">
-                                        <p>Всего 1 500₽</p>
-                                        <p>за статью</p>
+                            <a href="#">
+                                <div class="card__item-date">
+                                    6 июня
+                                </div>
+                                <div class="card__content">
+                                    <h3 class="card__title item__title">Наполнение</h3>
+                                    <p class="card__text">Подберем ключи, напишем статьи, разместим и красиво оформим на
+                                        Вашем
+                                        сайте</p>
+                                    <ul class="card__list">
+                                        <li class="card__list-item">Внедрим наши программные решения для оформления</li>
+                                        <li class="card__list-item">Сделаем аудит и укажем на основные ключевые точки
+                                            роста
+                                            проекта
+                                        </li>
+                                        <li class="card__list-item">Минимальный заказ всего 10 статей</li>
+                                    </ul>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__footer-content">
+                                        <div class="card__price">
+                                            <p>Всего 1 500₽</p>
+                                            <p>за статью</p>
+                                        </div>
+                                        <button class="button button--white">Заказать</button>
                                     </div>
-                                    <button class="button button--white">Заказать</button>
+                                    <div class="card__img">
+                                        <img src="src/img/card/2.jpg" alt="Пример работы">
+                                    </div>
                                 </div>
-                                <div class="card__img">
-                                    <img src="src/img/card/2.jpg" alt="Пример работы">
-                                </div>
-                            </div>
+                            </a>
                         </div>
+
                         <div class="card__item third">
-                            <div class="card__item-date">
-                                6 июня
-                            </div>
-                            <div class="card__content">
-                                <h3 class="card__title item__title">Инструменты</h3>
-                                <ul class="card__list">
-                                    <li class="card__list-item">Набор плагинов для оформления контента на информационных
-                                        сайтах</li>
-                                    <li class="card__list-item">Макет и сборка для запуска сайта</li>
-                                    <li class="card__list-item">Сообщество веб-мастеров</li>
-                                    <li class="card__list-item">Марафоны по запуску сайтов статейников</li>
-                                    <li class="card__list-item">Блог о веб-разработке</li>
-                                </ul>
-                            </div>
-                            <div class="card__footer">
-                                <div class="card__footer-content">
-                                    <div class="card__price">
-                                        <p>Всего</p>
-                                        <p>19 990₽</p>
+                            <a href="#">
+                                <div class="card__item-date">
+                                    6 июня
+                                </div>
+                                <div class="card__content">
+                                    <h3 class="card__title item__title">Инструменты</h3>
+                                    <ul class="card__list">
+                                        <li class="card__list-item">Набор плагинов для оформления контента на
+                                            информационных
+                                            сайтах</li>
+                                        <li class="card__list-item">Макет и сборка для запуска сайта</li>
+                                        <li class="card__list-item">Сообщество веб-мастеров</li>
+                                        <li class="card__list-item">Марафоны по запуску сайтов статейников</li>
+                                        <li class="card__list-item">Блог о веб-разработке</li>
+                                    </ul>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__footer-content">
+                                        <div class="card__price">
+                                            <p>Всего</p>
+                                            <p>19 990₽</p>
+                                        </div>
+                                        <button class="button button--white">Заказать</button>
                                     </div>
-                                    <button class="button button--white">Заказать</button>
+                                    <div class="card__img">
+                                        <img src="src/img/card/3.jpg" alt="Пример работы">
+                                    </div>
                                 </div>
-                                <div class="card__img">
-                                    <img src="src/img/card/3.jpg" alt="Пример работы">
-                                </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <!-- /.card -->
@@ -359,7 +377,11 @@
                     <div class="section__header">
                         <h3 class="section__header-title">Новости</h3>
                         <!-- /.section__header-title -->
-                        <h4 class="section__header-subtitle">Все новости</h4>
+                        <h4 class="section__header-subtitle">
+                            <a href="news.html"><span>Все новости</span>
+                                <img src="src/img/arrow.svg" alt="Стрелка">
+                            </a>
+                        </h4>
                         <!-- /.section__header-subtitle -->
                     </div>
                     <!-- /.section__header -->
@@ -372,7 +394,7 @@
                                     <img src="src/img/news/1.jpg" alt="" class="news__img">
                                     <p class="news__date">26.02.22</p>
                                 </div>
-                                <a href="#">
+                                <a href="modal.html">
                                     <div class="news__content">
                                         <h3 class="news__title item__title">Эксперимент
                                             по докрутке статей<br> в выдаче</h3>
@@ -727,7 +749,7 @@
                         </div>
                     </div>
                     <div class="footer__arrow">
-                        <a href="#">
+                        <a href="/" data-scroll="#header">
                             <img src="src/img/footer/arrow-up.png" alt="">
                         </a>
                     </div>

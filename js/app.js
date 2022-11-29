@@ -44,4 +44,21 @@ $(document).ready(function () {
             }
         ]
     })
+
+    //* Smooth Scroll
+    $('[data-scroll]').on('click', function (event) {
+        event.preventDefault();
+
+        let $this = $(this),
+            blockId = $this.data('scroll'),
+            blockOffset = $(blockId).offset().top;
+
+        $('#nav a').removeClass('active');
+        $this.addClass('active');
+        $('.nav, .nav-toggle').removeClass('active'); // при скролле по нажатию в меню убирать меню и менять бургер
+
+        $('html, body').animate({
+            scrollTop: blockOffset
+        }, 500);
+    })
 })

@@ -55,6 +55,10 @@ a {
     color: inherit;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 h1,
 h2,
 h3,
@@ -117,6 +121,10 @@ li {
 .section__header-subtitle {
     font-weight: 600;
     font-size: 2rem;
+}
+
+.section__header-subtitle span {
+    margin-right: 1rem;
 }
 
 /* HEADER */
@@ -956,10 +964,6 @@ li {
     transform: rotate(135deg);
 }
 
-.nav__link:hover {
-    transform: scale(1.2);
-}
-
 /* FOOTER */
 
 .footer {
@@ -1304,6 +1308,10 @@ li {
 
     .section__header-subtitle {
         font-size: 1.6rem;
+    }
+
+    .section__header-subtitle img {
+        display: none;
     }
 
     /* INTRO */
