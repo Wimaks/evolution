@@ -99,4 +99,41 @@ $(document).ready(function () {
                 relY = e.pageY - parentOffset.top;
             $(this).find('span').css({ top: relY, left: relX })
         });
+
+    //* POPUP
+
+    $('.popup__list-link').on('click', function (event) {
+        event.preventDefault()
+
+        $(this).next('.popup__list-card').toggleClass('active')
+        $(this).toggleClass('active')
+        $('.option__item').removeAttr('checked')
+    })
+
+    $('.popup-link').on('click', function (event) {
+        event.preventDefault();
+
+        $('.popup').toggleClass('active')
+    })
+
+    $('.popup__close').on('click', function (event) {
+        event.preventDefault();
+
+        $('.popup, .popup__second, .popup__learn').removeClass('active')
+        $('#form').removeClass('_sending')
+    })
+
+    $('.popup__close-second, .popup__close, .button-submit').on('click', function (event) {
+        // event.preventDefault();
+
+        $('.popup__second').removeClass('active')
+
+        $('#form').trigger("reset");
+    })
+
+    $('.button-submit-news').on('click', function (event) {
+        // event.preventDefault()
+
+        $('#form__news').trigger("reset");
+    })
 })

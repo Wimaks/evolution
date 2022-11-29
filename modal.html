@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/news.css">
     <link rel="stylesheet" href="src/css/modal.css">
+    <link rel="stylesheet" href="src/css/popup.css">
     <title>Студия "Elevation"</title>
 </head>
 
@@ -57,7 +58,7 @@
                             </div>
                         </div>
                         <div>
-                            <a class="button button-blue header__button"><i>Связаться с
+                            <a class="button button-blue header__button popup-link"><i>Связаться с
                                     нами</i><span></span></a>
                         </div>
                     </nav>
@@ -278,7 +279,9 @@
                                 <textarea class="comments__textarea" name="text_comment"
                                     placeholder="Оставить комментарий" id="textarea" name="field"
                                     wrap="soft"></textarea>
-                                <input class="button" type="submit" value="Отправить">
+                                <button type="submit"
+                                    class="button button-blue button-submit-news"><i>Отправить</i><span></span>
+                                </button>
 
                             </form>
                         </div>
@@ -296,11 +299,12 @@
                             </div>
                             <div class="sidebar__item telegram">
                                 <h3 class="section__header-title sidebar__title">Подпишись на нас
-                                    в телеграме – <a href="https://t.me/Wimaks" target="_blank">@studio.elev</a>
+                                    в телеграме – <a href="#" target="_blank">@studio.elev</a>
                                 </h3>
                                 <!-- /.section__header-title -->
 
-                                <button class="button">Подписаться</button>
+                                <a href="#" class="button button-blue"><i>Подписаться</i><span></span>
+                                </a>
 
                                 <img class="sidebar__image" src="src/img/sidebar/man_airplane.svg" alt="Человек">
                             </div>
@@ -373,9 +377,55 @@
         <!-- /.footer -->
     </div>
 
+    <div class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <h2 class="popup__title">Оставьте свои данные для связи</h2>
+                <a href="#" class="popup__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        class="to-svg">
+                        <rect width="1.97988" height="17.8189" rx="0.98994"
+                            transform="matrix(0.707109 0.707105 -0.707109 0.707105 12.6 0.000244141)" fill="#1298BD">
+                        </rect>
+                        </rect>
+                        <rect width="1.97988" height="17.8189" rx="0.98994"
+                            transform="matrix(-0.707109 0.707105 -0.707109 -0.707105 14 12.5999)" fill="#1298BD">
+                        </rect>
+                    </svg>
+                </a>
+                <div class="popup__form">
+                    <form action="#" id="form" class="popup__form-body">
+                        <div class="popup__form-item">
+                            <label for="formName" class="popup__form-label">Имя*:</label>
+                            <input id="formName" type="text" name="name" class="popup__form-input _req">
+                        </div>
+                        <div class="popup__form-item">
+                            <label for="formEmail" class="popup__form-label">E-mail*:</label>
+                            <input id="formEmail" type="text" name="email" class="popup__form-input _req _email">
+                        </div>
+                        <div class="popup__form-item">
+                            <div class="checkbox">
+                                <input id="formAgreement" checked type="checkbox" name="agreement"
+                                    class="checkbox__input _req">
+                                <label for="formAgreement" class="checkbox__label"><span>Отправляя форму,
+                                        вы соглашаетесь на обработку <a href="src/personal.pdf"
+                                            target="_blank">персональных данных</a></span></label>
+                            </div>
+                        </div>
+                        <button type="submit"
+                            class="button button-blue popup__form-button button-submit"><i>Отправить</i><span></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/formNews.js"></script>
     <script src="js/app.js"></script>
 </body>
 
