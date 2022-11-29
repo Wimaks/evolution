@@ -46,8 +46,7 @@ body {
 }
 
 i {
-    color: #3A2E38;
-    font-size: 18px;
+    font-style: unset;
 }
 
 a {
@@ -140,6 +139,7 @@ li {
     border-radius: 0px 0px 40px 40px;
     width: 100%;
     padding: 1.5rem 0;
+    box-shadow: 0px 1px 4px rgba(18, 152, 189, 0.26);
 }
 
 .header__inner {
@@ -184,9 +184,23 @@ li {
 
 .nav__link a:hover,
 .nav__link-item:hover,
-.footer__item-link a:hover {
-    text-decoration: underline;
+.burger-nav__link a:hover,
+.burger-nav__link-icon img:hover {
     transform: scale(1.1);
+    color: #1298BD;
+    cursor: pointer;
+}
+
+.footer__item-link a:hover {
+    transform: scale(1.1);
+    color: #23cfff;
+    cursor: pointer;
+}
+
+.footer__item-link img:hover {
+    filter: invert(44%) sepia(70%) saturate(520%) hue-rotate(146deg) brightness(150%) contrast(260%);
+    -webkit-filter: invert(44%) sepia(70%) saturate(520%) hue-rotate(146deg) brightness(150%) contrast(260%);
+    -moz-filter: invert(44%) sepia(70%) saturate(520%) hue-rotate(146deg) brightness(150%) contrast(260%);
 }
 
 .nav__item-contacts .nav__link {
@@ -323,12 +337,19 @@ li {
     margin-top: 5rem;
 }
 
+.header__logo img:hover,
+.burger-header__logo img:hover,
+.footer__image img:hover {
+    transform: scale(1.1);
+}
+
 .burger-nav__item.burger-nav__item-info {
     margin-top: 4rem;
 }
 
 .burger-nav__link {
     margin-bottom: 1rem;
+    display: flex;
 }
 
 .burger-nav__link:last-child {
@@ -345,60 +366,97 @@ li {
 
 .burger-nav__link-item {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
+    align-items: center;
 }
 
 .burger-nav__link-icon {
     position: relative;
-    padding-left: 2.5rem;
 }
 
 .burger-nav__link-icon img {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    object-fit: cover;
-    transform: translateY(-50%);
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 
 /* BUTTON */
 
 .button {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #1298BD;
+    border-radius: 40px;
     padding: 1.5rem 3.2rem;
-
-    font-weight: 400;
-    color: #fff;
-
     line-height: 1.2;
     font-size: 1.6rem;
-
-    background-color: #1298BD;
-    border: 1px solid transparent;
-    border-radius: 40px;
-
+    color: #000;
     cursor: pointer;
+}
 
-    height: fit-content;
-    width: fit-content;
+.button span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #1298BD;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.button.button-index span,
+.button.button-blue span {
+    z-index: 1;
+}
+
+.button.button-index i,
+.button.button-blue i {
+    position: relative;
+    z-index: 2;
 }
 
 .button:hover {
-    background-color: #fff;
-    color: #000;
-    border-color: #1298BD;
-}
-
-.button.button--white {
-    background-color: #fff;
-    color: #000;
-    border-color: #1298BD;
-}
-
-.button.button--white:hover {
-    background-color: #1298BD;
-    border: 1px solid transparent;
     color: #fff;
+}
+
+.button.button-blue:hover {
+    color: #000;
+}
+
+.button:hover span {
+    width: 225%;
+    height: 562.5px;
+}
+
+.button:active {
+    background-color: #1298BD;
+}
+
+.button.button-header:active {
+    background-color: #fff;
+}
+
+.button.button-index {
+    background: #fff;
+}
+
+.button.button-blue {
+    background: #1298BD;
+    color: #fff;
+}
+
+.button.button-blue span {
+    background-color: #fff;
+}
+
+.works .button.button-index {
+    margin: 0 auto;
 }
 
 /* INTRO */
@@ -503,7 +561,7 @@ li {
 /* Слайдер */
 .slick-slider {
     cursor: grabbing;
-    padding: 0 2rem 0 4rem;
+    padding: 0 4rem 0 6rem;
 }
 
 /* Ограничивающая оболочка */
@@ -545,9 +603,9 @@ li {
     display: block;
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 40%;
     z-index: 10;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
     font-size: 0;
     width: 34px;
     height: 44px;
@@ -556,6 +614,12 @@ li {
     filter: brightness(0) saturate(100%) invert(46%) sepia(75%) saturate(523%) hue-rotate(146deg) brightness(93%) contrast(94%);
     -webkit-filter: brightness(0) saturate(100%) invert(46%) sepia(75%) saturate(523%) hue-rotate(146deg) brightness(93%) contrast(94%);
     -moz-filter: brightness(0) saturate(100%) invert(46%) sepia(75%) saturate(523%) hue-rotate(146deg) brightness(93%) contrast(94%);
+}
+
+.reviews .slick-arrow {
+    top: 50%;
+
+    transform: translateY(-50%);
 }
 
 .slick-arrow:hover {
@@ -615,10 +679,6 @@ li {
 
     overflow: hidden;
 }
-
-/* .card__content {
-    height: 350px;
-} */
 
 .card__item.first .card__list {
     margin-bottom: 2.4rem;
@@ -693,35 +753,17 @@ li {
 
 .card__img {
     position: relative;
+    margin-left: auto;
 }
 
 .card__img img {
-    /* position: absolute; */
     object-fit: cover;
-    /* bottom: 0;
-    right: 0;
-    z-index: 1; */
     display: block;
     max-width: 100%;
     height: auto;
 
     margin: 0 auto;
-
-    /* width: 100%; */
-    /* height: 100%; */
 }
-
-/* .card__item.first .card__img {
-    padding-left: 56%;
-}
-
-.card__item.second .card__img {
-    padding-left: 47%;
-}
-
-.card__item.third .card__img {
-    padding-left: 46%;
-} */
 
 .card__price {
     color: #1298BD;
@@ -1196,6 +1238,7 @@ li {
 
     .card__footer {
         display: flex;
+        justify-content: unset;
     }
 
     .card__footer-content {
@@ -1204,7 +1247,7 @@ li {
     }
 
     .card__img {
-        margin: -5rem 0 0 0;
+        margin: -5rem 0 0 auto;
     }
 
     .card__price {
@@ -1331,6 +1374,10 @@ li {
 
     .slick-initialized .slick-slide {
         margin-right: 0;
+    }
+
+    .slick-slider {
+        padding: 0 5rem 0 5rem;
     }
 
 }

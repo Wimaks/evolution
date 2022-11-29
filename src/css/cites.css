@@ -22,8 +22,12 @@
 
     display: flex;
     justify-content: space-between;
-    gap: 5.5rem;
+    gap: 1rem;
     flex: 1 1 auto;
+}
+
+.block__item.prices .block__image {
+    width: 39%;
 }
 
 .block__item-body {
@@ -39,7 +43,7 @@
 }
 
 .block__item-body.second {
-    width: 330px;
+    width: 340px;
 }
 
 .block__item-body.third {
@@ -64,6 +68,8 @@
     display: block;
     max-width: 100%;
     height: auto;
+
+    margin: 0 0 0 auto;
 }
 
 /* CARD */
@@ -181,7 +187,7 @@
 }
 
 .faq .sidebar__item {
-    width: 40%;
+    width: 31%;
 }
 
 @media (max-width: 1440px) {}
@@ -193,6 +199,7 @@
         flex-direction: column;
         max-width: 460px;
         padding: 4rem;
+        gap: 4rem;
     }
 
     .block__item-body.first,
@@ -206,8 +213,14 @@
         gap: 4rem;
     }
 
-    .block__image {
-        align-self: center;
+    .block__image,
+    .block__item.prices .block__image {
+        width: 100%;
+    }
+
+    .block__image img {
+        margin: 0 auto;
+
     }
 
     .block__item .card__price {

@@ -2,10 +2,6 @@ body {
     background-color: #E8F5F9;
 }
 
-.header {
-    box-shadow: 0px 1px 4px rgba(18, 152, 189, 0.26);
-}
-
 .section__header-text {
     margin-left: 2rem;
 }
