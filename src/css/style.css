@@ -494,13 +494,6 @@ li {
     line-height: 75px;
 }
 
-/* .intro__title span:first-child,
-.intro__title i {
-    background-color: #1298BD;
-    color: #fff;
-    padding: 0 .5rem;
-} */
-
 .intro__subtitle {
     max-width: 453px;
 
@@ -1433,7 +1426,6 @@ li {
         font-size: 1.8rem;
     }
 
-    .intro__title i,
     .intro__title .hidden {
         display: none;
     }
