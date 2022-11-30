@@ -133,7 +133,7 @@ $(document).ready(function () {
     })
 
     function checkScroll(scrollOffset) {
-        if (scrollOffset >= headerH) {
+        if (scrollOffset >= 1) {
             intro.addClass('visible');
         } else {
             intro.removeClass('visible')
