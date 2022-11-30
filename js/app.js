@@ -116,4 +116,27 @@ $(document).ready(function () {
         $('#form').trigger("reset");
         $('.popup__form-input').removeClass('_error')
     })
+
+    //* INTRO
+
+    let intro = $('#intro'),
+        headerH = $('#header').innerHeight(),
+        scrollOffset = $(window).scrollTop();
+
+    //* Fixed Header
+    checkScroll(scrollOffset);
+
+    $(window).on('scroll', function () {
+        scrollOffset = $(this).scrollTop();
+
+        checkScroll(scrollOffset);
+    })
+
+    function checkScroll(scrollOffset) {
+        if (scrollOffset >= headerH) {
+            intro.addClass('visible');
+        } else {
+            intro.removeClass('visible')
+        }
+    };
 })

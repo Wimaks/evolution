@@ -430,6 +430,15 @@ li {
     height: 562.5px;
 }
 
+.intro.visible .button.intro-button span {
+    width: 225%;
+    height: 562.5px;
+}
+
+.intro.visible .button.intro-button {
+    color: #fff;
+}
+
 .button:active {
     background-color: #1298BD;
 }
