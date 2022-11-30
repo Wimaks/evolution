@@ -186,13 +186,13 @@ li {
 .nav__link-item:hover,
 .burger-nav__link a:hover,
 .burger-nav__link-icon img:hover {
-    transform: scale(1.1);
+
     color: #1298BD;
     cursor: pointer;
 }
 
 .footer__item-link a:hover {
-    transform: scale(1.1);
+
     color: #23cfff;
     cursor: pointer;
 }
@@ -337,12 +337,6 @@ li {
     margin-top: 5rem;
 }
 
-.header__logo img:hover,
-.burger-header__logo img:hover,
-.footer__image img:hover {
-    transform: scale(1.1);
-}
-
 .burger-nav__item.burger-nav__item-info {
     margin-top: 4rem;
 }
@@ -397,6 +391,7 @@ li {
     color: #000;
     cursor: pointer;
     box-shadow: 0 2px 0 #1298bd;
+    transition: color 0.4s ease-in-out;
 }
 
 .button span {
@@ -460,6 +455,25 @@ li {
     margin: 0 auto .5rem auto;
 }
 
+.intro__title .button {
+    display: inline-flex;
+    font-size: inherit;
+    border: none;
+    border-radius: 0;
+    line-height: 1;
+    padding: 0 0.5rem;
+    box-shadow: none;
+}
+
+.intro__title:hover .button.intro-button span {
+    width: 225%;
+    height: 562.5px;
+}
+
+.intro__title:hover .button.intro-button {
+    color: #fff;
+}
+
 /* INTRO */
 
 .intro {
@@ -480,11 +494,12 @@ li {
     line-height: 75px;
 }
 
-.intro__title span {
+/* .intro__title span:first-child,
+.intro__title i {
     background-color: #1298BD;
     color: #fff;
     padding: 0 .5rem;
-}
+} */
 
 .intro__subtitle {
     max-width: 453px;
@@ -1418,6 +1433,11 @@ li {
         font-size: 1.8rem;
     }
 
+    .intro__title i,
+    .intro__title .hidden {
+        display: none;
+    }
+
     /* PROMO */
 
     .promo {
@@ -1437,11 +1457,14 @@ li {
 
     .promo__icon img {
         display: block;
+        width: 35px;
+        height: 35px;
+
         position: absolute;
         top: 50%;
         left: 0;
         z-index: 1;
-        transform: translateY(-50%);
+        transform: translateY(-30%);
     }
 
     .promo__text {

@@ -112,7 +112,7 @@ $(document).ready(function () {
         event.preventDefault();
 
         $('.popup').removeClass('active')
-        $('.popup__content').removeClass('_sending')
+        $('.popup__contentg').removeClass('_sending')
         $('#form').trigger("reset");
         $('.popup__form-input').removeClass('_error')
     })
