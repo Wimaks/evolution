@@ -57,7 +57,9 @@ $(document).ready(function () {
 
         $('#nav a').removeClass('active');
         $this.addClass('active');
-        $('.nav, .nav-toggle').removeClass('active'); // при скролле по нажатию в меню убирать меню и менять бургер
+        $('.nav, .nav-toggle, .burger').removeClass('active'); // при скролле по нажатию в меню убирать меню и менять бургер
+
+        $('.header').removeClass('fixed')
 
         $('html, body').animate({
             scrollTop: blockOffset
@@ -112,7 +114,7 @@ $(document).ready(function () {
         event.preventDefault();
 
         $('.popup').removeClass('active')
-        $('.popup__contentg').removeClass('_sending')
+        $('.popup__content').removeClass('_sending')
         $('#form').trigger("reset");
         $('.popup__form-input').removeClass('_error')
     })
@@ -123,7 +125,6 @@ $(document).ready(function () {
         headerH = $('#header').innerHeight(),
         scrollOffset = $(window).scrollTop();
 
-    //* Fixed Header
     checkScroll(scrollOffset);
 
     $(window).on('scroll', function () {
@@ -131,6 +132,7 @@ $(document).ready(function () {
 
         checkScroll(scrollOffset);
     })
+
 
     function checkScroll(scrollOffset) {
         if (scrollOffset >= 1) {
